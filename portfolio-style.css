@@ -1,0 +1,21 @@
+:root {
+--background: #000000;
+--text-1: #FFFFFF;
+--one: #8D4BE0;
+--two: #D875FF;
+--three: #7AF8FF;
+--four: #8EA8FF;
+--five: #567CFF;
+
+
+--background: #000000;
+--text-1: #FFFFFF;
+--one: #B624C1;
+--two: #EF40FF;
+--three: #9457E4;
+--four: #0FF0FC;
+--five: #1562C1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+
