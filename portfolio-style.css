@@ -1,20 +1,24 @@
 :root {
 --background: #000000;
 --text-1: #FFFFFF;
---one: #8D4BE0;
---two: #D875FF;
---three: #7AF8FF;
---four: #8EA8FF;
---five: #567CFF;
-
-
---background: #000000;
---text-1: #FFFFFF;
---one: #B624C1;
---two: #EF40FF;
---three: #9457E4;
---four: #0FF0FC;
---five: #1562C1;
+--rose1: #E99DE3;
+--rose2: #E34BFF;
+--rose3: #EC32FD;
+--rose4: #B624C1;
+--rose5: #EF40FF;
+--purple1: #D875FF;
+--purple2: #AF5EEE;
+--purple3: #9D5DB8;
+--purple4: #B141E0;
+--purple5: #8D4BE0;
+--purple6: #6D33B7;
+--purple-gray1: #C6B0CF;
+--gray1: #F5F5F5;
+--blue1: #8EA8FF;
+--blue2: #567CFF;
+--blue3: #0FF0FC;
+--blue4: #1562C1;
+--blue5: #7AF8FF;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
