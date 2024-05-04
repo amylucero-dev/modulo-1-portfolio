@@ -21,5 +21,56 @@
 --blue5: #7AF8FF;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10% 2rem; /* aca aplique un 2rem al padding-top, 10% al padding-right y 2rem al padding-bottom. */
+    background: #000000;
+    backdrop-filter: blur(20px);
+    justify-content: flex-end; /* alinear mi header items a la derecha, al final */
+    align-items: center;
+    display: flex; /* este me ha servido para que los header titles se alineen a la derecha */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-left: 2rem;
+    font-weight: 200px;
+    transition: 035 ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+    color: var(--text-1);
+    border-bottom: 3px solid var(--purple6);
+    background-image: linear-gradient(to bottom, #6D33B7, #8D4BE0, #AF5EEE, #EC32FD); /* aca utilize background-image en lugar de background-color porque esta ultima no me dejaba y solo aparecia en negro*/
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.section-about {
+    margin-top: 100px;
+}

@@ -6,21 +6,20 @@
     <link rel="stylesheet" href="portfolio-style.css">
     <title>Amy Portfolio</title>
 </head>
-<body>
-    <div class="header-container">
-        <nav class="nav-header">
-            <ul class="nav-menu">
-                <li class="nav-items"><a href="#about" class="nav-port-link">Acerca de Mi</a></li>
-                <li class="nav-items"><a href="#knowledge" class="nav-port-link">Conocimientos</a></li>
-                <li class="nav-items"><a href="#proyectos" class="nav-port-link">Proyectos</a></li>
-                <li class="nav-items"><a href="#contacto" class="nav-port-link">Contacto</a></li>
-            </ul>
+<header class="header">
+        <nav class="nav-bar">
+                <a href="#about">Acerca de Mi</a>
+                <a href="#knowledge">Conocimientos</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
             </nav>
-        </div>
+</header>
+
+<body>
 <section class="section-about" id="about">
-        <div class=”column-main-content”>
+        <div class=”main-content-column”>
             <div class="about-info">
-            <p>Mi nombre es <h1>Amy Lucero</h1></p>
+            <p>Mi nombre es <h1><span class="my-name">Amy Lucero</span></h1></p>
             <p>Estudiante de programación, con enfoque en Front-end development para páginas web.</p>
             </div>
         </div>
@@ -85,9 +84,51 @@
             <path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
         </svg>
         <h3 class="tech-skill">Git</h3>
-
     </div>
+</section>
 
+<section class="section-phrase-quote">
+    <div class="quote-column">
+        <p class="quote-text">Uno no debería tener miedo a decir “no lo sé” o “no lo entiendo”, o incluso de hacer “preguntas tontas”. Ninguna pregunta es tonta. Aunque las cosas puedan parecer imposibles, aunque los expertos digan que algo es imposible, aunque haya que seguir el camino sola, no hay que tener miedo a estar equivocada, a admitir errores; aquellos que sepan fallar de forma estrepitosa son los que pueden conseguir cosas grandiosas.</p>
+        <p>Margaret Hamilton</p>
+    </div>
+</section>
+
+<section class="section-my-projects">
+    <div>
+        <h2>Mis Proyectos</h2>
+        <p>Estos son algunos de mis proyectos más destacados.</p>
+    </div>
+    <div>
+        <p>Portfolio</p>
+        <p>Generador de Memes</p>
+        <p>Match 3</p>
+        <p>Controlador de Gastos</p>
+        <p>Administrador de Reuniones</p>
+        <p>Todo App</p>
+        <p>Buscador de Películas</p>
+    </div>
+</section>
+
+<section class="section-contact-me">
+    <div>
+        <h2>Escríbeme</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
+    </div>
+    <form>
+        <p>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+        </p>
+        <p>
+            <input type="email" name="correo" placeholder="Correo Electrónico">
+        </p>
+        <p>
+            <textarea name="descripcion" placeholder="Escribe Tu Mensaje Aquí"></textarea>
+        </p>
+        <button type="submit">Enviar</button>
+
+    </form>
 </section>
 
 
