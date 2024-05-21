@@ -94,6 +94,11 @@ section {
     /* padding: 2rem 10% 2rem; */
 }
 
+h2 {
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
 .about-content {
     display: flex;
     flex-wrap: wrap; /* validar, no estoy segura si dejarle wrap o cambiarlo */
@@ -117,10 +122,14 @@ section {
 }
 
 .about-info {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+/* #intro-about-info {
+    font-size: 25px;
+} */
 
 .about-info h1 {
     font-size: 50px;
@@ -152,12 +161,13 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
 }
 
-.knowledge-summary h2 {
+/* .knowledge-summary h2 {
     margin-bottom: 2rem;
     font-size: 40px;
-}
+} */
 
 .knowledge-summary p {
     text-align: center;
@@ -191,7 +201,7 @@ section {
 }
 
 .knowledge-skills-box:hover {
-    box-shadow: 0 0 30px var(--blue2);
+    box-shadow: 0 0 40px var(--blue1);
 }
 
 .knowledge-tech-skill {
@@ -227,7 +237,7 @@ section {
 }
 
 .my-projects-summary {
-    margin: 2rem 4rem 2rem 4rem;
+    margin: 8rem 4rem 2rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,12 +269,91 @@ section {
     margin-bottom: 1rem;
 }
 
-.project-image {
+.project:hover {
+    box-shadow: 0 0 40px var(--purple6);
+}
+
+/* .project-image {
     margin: 2rem;
     padding: 2rem;
     width: 200px;
     height: 200px;
     border-radius: 15px;
     background-color: #9D5DB8;
+}
+ */
+
+.project-portfolio {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--rose1);
+    transition: 035 ease;
+}
+
+.project-meme-gen {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--purple1);
+}
+
+.project-match-three {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--rose3);
+}
+
+.project-expense-contr {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--purple2);
+}
+
+.project-meeting-admin {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--purple5);
+}
+
+
+.project-todo-app {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--purple4);
+}
+
+.project-movie-search {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: var(--purple3);
+}
+
+.contact-me-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem;
+    border-radius: 15px;
+    margin: 2rem;
 }
 

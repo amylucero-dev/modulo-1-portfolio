@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     <title>Amy Portfolio</title>
 </head>
@@ -25,7 +25,7 @@
     <section class="about-section" id="about">
         <div class=”about-content”>
             <div class="about-info"> <!-- preguntar si este div esta bien o si es innecesario -->
-                <p>¡Hola! Mi nombre es <h1><span>Amy Lucero</span></h1></p>
+                <p id="intro-about-info">¡Hola! Mi nombre es <h1><span>Amy Lucero</span></h1></p>
                 <p>Estudiante de programación, con enfoque en Front-end development para páginas web.</p>
             </div>
 
@@ -139,50 +139,50 @@
     </div>
     <div class="my-projects-container">
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-portfolio">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/portafolio-1.png" class="project-thumb">
             </div>
             <p>Portfolio</p> <!-- aca tuve que sacar los p del div porque no me dejaba estilar -->
         </a>
 
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-meme-gen">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/generador-de-memes-2.png" class="project-thumb">
             </div>
             <p>Generador de Memes</p>
         </a>
 
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-match-three">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/match-3.png" class="project-thumb">
             </div>
             <p>Match 3</p>
         </a>
 
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-expense-contr">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/controlador-gastos-4.png" class="project-thumb">
             </div>
             <p>Controlador de Gastos</p>
         </a>
 
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-meeting-admin">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/administrador-reuniones-5.png" class="project-thumb">
             </div>
             <p>Administrador de Reuniones</p>
         </a>
 
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-todo-app">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/todo-app-6.png" class="project-thumb">
             </div>
             <p>Todo App</p>
         </a>
 
         <a href="#" target="_blank" class="project">
-            <div class="project-image">
-                <img src="" class="project-thumb">
+            <div class="project-image project-movie-search">
+                <img src="/ADA/modulo-1-portfolio/portfolio-img/buscador-peliculas-7.png" class="project-thumb">
             </div>
             <p>Buscador de Películas</p> 
         </a>
@@ -191,27 +191,42 @@
 </section>
 
 <section class="contact-me-section">
-    <div>
-        <h2>Escríbeme</h2>
+    <div class="contact-me-form">
+        <h2>Contactame</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
+        <ul>
+            <li>
+                <a href="https://www.threads.net/@amylucero_" target="_blank"></a>@sunsetcat__</a>
+            </li>
+            <li>
+                <a href="https://github.com/amylucero-dev" target="_blank">amylucero-dev</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/amylucerogt/" target="_blank">amylucerogt</a>
+            </li>
+            <li>
+                <a href="mailto:amylucero.dev@gmail.com" target="_blank">amylucero.dev@gmail.com</a>
+            </li>
+        </ul>
     </div>
-    <form>
-        <p>
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="text" name="apellido" placeholder="Apellido">
-        </p>
-        <p>
-            <input type="email" name="correo" placeholder="Correo Electrónico">
-        </p>
-        <p>
-            <textarea name="descripcion" placeholder="Escribe Tu Mensaje Aquí"></textarea>
-        </p>
-        <button type="submit">Enviar</button>
 
-    </form>
+    <div class="text-me-form">
+        <h2>Escríbeme</h2>
+        <form>
+            <p>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" placeholder="Apellido">
+            </p>
+            <p>
+                <input type="email" name="correo" placeholder="Correo Electrónico">
+            </p>
+            <p>
+                <textarea name="descripcion" placeholder="Escribe Tu Mensaje Aquí"></textarea>
+            </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </section>
 
-
-    </header>
 </body>
 </html>
