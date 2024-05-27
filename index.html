@@ -12,12 +12,33 @@
 <body>
 
     <header class="header">
-        <nav class="nav-bar">
-                <a href="#about">Acerca de Mi</a>
-                <a href="#knowledge">Conocimientos</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#contact">Contacto</a>
-            </nav>
+
+        <i id="menu-icon" class="hide-on-large"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="68" height="68" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+            </svg>
+        </i>
+
+        <div class="mobile-menu hide-on-large">
+            <a href="#about">Acerca de Mi</a>
+        
+            <a href="#knowledge">Conocimientos</a>
+        
+            <a href="#projects">Proyectos</a>
+        
+            <a href="#contact">Contacto</a>
+        
+            </ul>
+        </div>
+
+        <nav class="nav-bar hide-on-small">
+            <a href="#about">Acerca de Mi</a>
+            <a href="#knowledge">Conocimientos</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
     </header>
 
 <!--     <section class="home" id="home"></section> -->
@@ -26,207 +47,247 @@
         <div class=”about-content”>
             <div class="about-info"> <!-- preguntar si este div esta bien o si es innecesario -->
                 <p id="intro-about-info">¡Hola! Mi nombre es <h1><span>Amy Lucero</span></h1></p>
-                <p>Estudiante de programación, con enfoque en Front-end development para páginas web.</p>
+                <p id="description-about-info">Estudiante de programación, con enfoque en Front-end development para páginas web.</p>
             </div>
 
-            <div class="about-social-icons">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
-                </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
-                </svg></a>
+            <div class="about-container">
+                <div class="about-wrapper">
+                    <a class="about-social-icons" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                    </svg></a>
+                    <a class="about-social-icons" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                    </svg></a>
+                </div>
+                <div class="my-projects-button">
+                    <a href="#projects">Lo que hago</a>
+                </div>
             </div>
         </div>
 
         <div class="about-img">
             <img src="/ADA/modulo-1-portfolio/portfolio-img/Amy Lucero - Profile Picture 2023.png" alt="About Profile Picture">
-
         </div>
 </section>
     
 <section class="knowledge-section" id="knowledge">
-    <div class="knowledge-summary">
-        <h2>Mis conocimientos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas architecto.</p>
-    </div>
-
-<div class="knowledge-wrapper">
-    <div class="knowledge-skills-container">
-        <div class="knowledge-skills-box">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f06529" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-                <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-            </svg>
-            <h3 class="knowledge-tech-skill">HTML5</h3>
+    <div class="column">
+        <div class="knowledge-summary">
+            <h2>Mis conocimientos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas architecto.</p>
         </div>
 
-    <div class="knowledge-skills-box">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#264de4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-            <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-        </svg>
-        <h3 class="knowledge-tech-skill">CSS3</h3>
-    </div>
+        <div class="knowledge-wrapper">
+            <div class="knowledge-skills-container">
+                <div class="knowledge-skills-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f06529" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                    </svg>
+                    <h3 class="knowledge-tech-skill">HTML5</h3>
+                </div>
+
+            <div class="knowledge-skills-box">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#264de4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+                <h3 class="knowledge-tech-skill">CSS3</h3>
+            </div>
 
 
-    <div class="knowledge-skills-box">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-sass" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cc6699" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-            <path d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" />
-        </svg>
-        <h3 class="knowledge-tech-skill">Saas</h3>
-    </div>
+            <div class="knowledge-skills-box">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-sass" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cc6699" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" />
+                </svg>
+                <h3 class="knowledge-tech-skill">Saas</h3>
+            </div>
 
-    <div class="knowledge-skills-box">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f0db4f" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-            <path d="M7.5 8h3v8l-2 -1" />
-            <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
-        </svg>
-        <h3 class="knowledge-tech-skill">JavaScript</h3>
-    </div>
+            <div class="knowledge-skills-box">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f0db4f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M7.5 8h3v8l-2 -1" />
+                    <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+                <h3 class="knowledge-tech-skill">JavaScript</h3>
+            </div>
 
 
-    <div class="knowledge-skills-box">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-react" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#61dbfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
-            <path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
-            <path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
-            <path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
-            <path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
-            <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
-            <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
-        </svg>
-        <h3 class="knowledge-tech-skill">React.Js</h3>
-    </div>
+            <div class="knowledge-skills-box">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-react" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#61dbfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
+                    <path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
+                    <path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
+                    <path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
+                    <path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
+                    <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
+                    <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
+                </svg>
+                <h3 class="knowledge-tech-skill">React.Js</h3>
+            </div>
 
-    <div class="knowledge-skills-box">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-git" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1502f" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-            <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-            <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-            <path d="M12 15v-6" />
-            <path d="M15 11l-2 -2" />
-            <path d="M11 7l-1.9 -1.9" />
-            <path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
-        </svg>
-        <h3 class="knowledge-tech-skill">Git</h3>
+            <div class="knowledge-skills-box">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-git" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1502f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 15v-6" />
+                    <path d="M15 11l-2 -2" />
+                    <path d="M11 7l-1.9 -1.9" />
+                    <path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
+                </svg>
+                <h3 class="knowledge-tech-skill">Git</h3>
+            </div>
+            
+            </div>
+        </div>
     </div>
-    
-    </div>
-</div>
 </section>
 
 <section class="quote-section">
     <div class="quote-column">
         <svg fill="#FFFFFF" width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"><path d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"></path></g></svg>
+        <blockquote>
         <p class="quote-text">Uno no debería tener miedo a decir “no lo sé” o “no lo entiendo”, o incluso de hacer “preguntas tontas”. Ninguna pregunta es tonta. Aunque las cosas puedan parecer imposibles, aunque los expertos digan que algo es imposible, aunque haya que seguir el camino sola, no hay que tener miedo a estar equivocada, a admitir errores; aquellos que sepan fallar de forma estrepitosa son los que pueden conseguir cosas grandiosas.</p>
-        <p id="author">Margaret Hamilton</p>
+        </blockquote>
+        <h2 id="author">Margaret Hamilton</h2>
     </div>
 </section>
 
-<section class="my-projects-section">
-    <div class="my-projects-summary">
-        <h2>Mis Proyectos</h2>
-        <p>Estos son algunos de mis proyectos más destacados.</p>
-    </div>
-    <div class="my-projects-container">
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-portfolio">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/portafolio-1.png" class="project-thumb">
-            </div>
-            <p>Portfolio</p> <!-- aca tuve que sacar los p del div porque no me dejaba estilar -->
-        </a>
+<section class="my-projects-section" id="projects">
+    <div class="column">
+        <div class="my-projects-summary">
+            <h2>Mis Proyectos</h2>
+            <p>Estos son algunos de mis proyectos más destacados.</p>
+        </div>
+        <div class="my-projects-container">
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-portfolio">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/portafolio-1.png" class="project-thumb">
+                </div>
+                <p>Portfolio</p> <!-- aca tuve que sacar los p del div porque no me dejaba estilar -->
+            </a>
 
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-meme-gen">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/generador-de-memes-2.png" class="project-thumb">
-            </div>
-            <p>Generador de Memes</p>
-        </a>
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-meme-gen">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/generador-de-memes-2.png" class="project-thumb">
+                </div>
+                <p>Generador de Memes</p>
+            </a>
 
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-match-three">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/match-3.png" class="project-thumb">
-            </div>
-            <p>Match 3</p>
-        </a>
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-match-three">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/match-3.png" class="project-thumb">
+                </div>
+                <p>Match 3</p>
+            </a>
 
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-expense-contr">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/controlador-gastos-4.png" class="project-thumb">
-            </div>
-            <p>Controlador de Gastos</p>
-        </a>
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-expense-contr">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/controlador-gastos-4.png" class="project-thumb">
+                </div>
+                <p>Controlador de Gastos</p>
+            </a>
 
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-meeting-admin">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/administrador-reuniones-5.png" class="project-thumb">
-            </div>
-            <p>Administrador de Reuniones</p>
-        </a>
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-meeting-admin">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/administrador-reuniones-5.png" class="project-thumb">
+                </div>
+                <p>Administrador de Reuniones</p>
+            </a>
 
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-todo-app">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/todo-app-6.png" class="project-thumb">
-            </div>
-            <p>Todo App</p>
-        </a>
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-todo-app">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/todo-app-6.png" class="project-thumb">
+                </div>
+                <p>Todo App</p>
+            </a>
 
-        <a href="#" target="_blank" class="project">
-            <div class="project-image project-movie-search">
-                <img src="/ADA/modulo-1-portfolio/portfolio-img/buscador-peliculas-7.png" class="project-thumb">
-            </div>
-            <p>Buscador de Películas</p> 
-        </a>
-        
+            <a href="#" target="_blank" class="project">
+                <div class="project-image project-movie-search">
+                    <img src="/ADA/modulo-1-portfolio/portfolio-img/buscador-peliculas-7.png" class="project-thumb">
+                </div>
+                <p>Buscador de Películas</p> 
+            </a>
+            
+        </div>
     </div>
 </section>
 
-<section class="contact-me-section">
-    <div class="contact-me-form">
-        <h2>Contactame</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
-        <ul>
-            <li>
-                <a href="https://www.threads.net/@amylucero_" target="_blank"></a>@sunsetcat__</a>
-            </li>
-            <li>
-                <a href="https://github.com/amylucero-dev" target="_blank">amylucero-dev</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/amylucerogt/" target="_blank">amylucerogt</a>
-            </li>
-            <li>
-                <a href="mailto:amylucero.dev@gmail.com" target="_blank">amylucero.dev@gmail.com</a>
-            </li>
-        </ul>
-    </div>
+<section class="contact-me-section" id="contact">
+    <div class="contact-me-container">
+        <div class="contact-me-form contact-me-column">
+            <h2>Contactame</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
+            <div class="contact-me-socials">
+                <a href="https://www.threads.net/@amylucero_?hl=es-la" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+                        <path d="M105 0h302c57.75 0 105 47.25 105 105v302c0 57.75-47.25 105-105 105H105C47.25 512 0 464.75 0 407V105C0 47.25 47.25 0 105 0z"/>
+                        <path fill="#fff" fill-rule="nonzero" d="M337.36 243.58c-1.46-.7-2.95-1.38-4.46-2.02-2.62-48.36-29.04-76.05-73.41-76.33-25.6-.17-48.52 10.27-62.8 31.94l24.4 16.74c10.15-15.4 26.08-18.68 37.81-18.68h.4c14.61.09 25.64 4.34 32.77 12.62 5.19 6.04 8.67 14.37 10.39 24.89-12.96-2.2-26.96-2.88-41.94-2.02-42.18 2.43-69.3 27.03-67.48 61.21.92 17.35 9.56 32.26 24.32 42.01 12.48 8.24 28.56 12.27 45.26 11.35 22.07-1.2 39.37-9.62 51.45-25.01 9.17-11.69 14.97-26.84 17.53-45.92 10.51 6.34 18.3 14.69 22.61 24.73 7.31 17.06 7.74 45.1-15.14 67.96-20.04 20.03-44.14 28.69-80.55 28.96-40.4-.3-70.95-13.26-90.81-38.51-18.6-23.64-28.21-57.79-28.57-101.5.36-43.71 9.97-77.86 28.57-101.5 19.86-25.25 50.41-38.21 90.81-38.51 40.68.3 71.76 13.32 92.39 38.69 10.11 12.44 17.73 28.09 22.76 46.33l28.59-7.63c-6.09-22.45-15.67-41.8-28.72-57.85-26.44-32.53-65.1-49.19-114.92-49.54h-.2c-49.72.35-87.96 17.08-113.64 49.73-22.86 29.05-34.65 69.48-35.04 120.16v.24c.39 50.68 12.18 91.11 35.04 120.16 25.68 32.65 63.92 49.39 113.64 49.73h.2c44.2-.31 75.36-11.88 101.03-37.53 33.58-33.55 32.57-75.6 21.5-101.42-7.94-18.51-23.08-33.55-43.79-43.48zm-76.32 71.76c-18.48 1.04-37.69-7.26-38.64-25.03-.7-13.18 9.38-27.89 39.78-29.64 3.48-.2 6.9-.3 10.25-.3 11.04 0 21.37 1.07 30.76 3.13-3.5 43.74-24.04 50.84-42.15 51.84z"/>
+                    </svg>
+                    amylucero_</a>
 
-    <div class="text-me-form">
-        <h2>Escríbeme</h2>
-        <form>
-            <p>
-                <input type="text" name="nombre" placeholder="Nombre">
-                <input type="text" name="apellido" placeholder="Apellido">
-            </p>
-            <p>
-                <input type="email" name="correo" placeholder="Correo Electrónico">
-            </p>
-            <p>
-                <textarea name="descripcion" placeholder="Escribe Tu Mensaje Aquí"></textarea>
-            </p>
-            <button type="submit">Enviar</button>
-        </form>
+                <a href="https://github.com/amylucero-dev" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+                    amylucero-dev</a>
+
+                <a href="https://www.linkedin.com/in/amylucerogt/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                    </svg>
+                    amylucerogt</a>
+
+                <a href="mailto:amylucero.gt@gmail.com" id="email-link" target="_blank" data-short="amylucero.gt">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="30" viewBox="0 0 122.879 88.855" enable-background="new 0 0 122.879 88.855" xml:space="preserve">
+                        <g>
+                            <path d="M7.048,0h108.784c1.939,0,3.701,0.794,4.977,2.069c1.277,1.277,2.07,3.042,2.07,4.979v74.759 c0,1.461-0.451,2.822-1.221,3.951c-0.141,0.365-0.361,0.705-0.662,0.994c-0.201,0.189-0.422,0.344-0.656,0.461 c-1.225,1.021-2.799,1.643-4.508,1.643H7.048c-1.937,0-3.701-0.793-4.979-2.07C0.794,85.51,0,83.748,0,81.807V7.048 c0-1.941,0.792-3.704,2.068-4.979C3.344,0.792,5.107,0,7.048,0L7.048,0z M5.406,78.842l38.124-38.22L5.406,9.538V78.842 L5.406,78.842z M47.729,44.045L8.424,83.449h105.701L76.563,44.051L64.18,54.602l0,0c-0.971,0.83-2.425,0.877-3.453,0.043 L47.729,44.045L47.729,44.045z M80.674,40.549l36.799,38.598V9.198L80.674,40.549L80.674,40.549z M8.867,5.406l53.521,43.639 l51.223-43.639H8.867L8.867,5.406z"/>
+                        </g>
+                    </svg>
+                    amylucero.gt@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="text-me-form contact-me-column">
+            <h2>Escríbeme</h2>
+            <form class="text-me-info">
+                <div class="text-me-name-last">
+                    <p>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="apellido" placeholder="Apellido">
+                    </p>
+                </div>
+                <div class="text-me-email">
+                    <p>
+                        <input type="email" name="correo" placeholder="Correo Electrónico">
+                    </p>
+                </div>
+                <div class="text-me-message">
+                    <p>
+                        <textarea name="descripcion" placeholder="Escribe Tu Mensaje Aquí"></textarea>
+                    </p>
+                    <button type="submit" class="contact-send-button">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
 </body>
+
+<footer class="footer-section">
+    <div class="nav-footer">
+
+    </div>
+    <div class="footer-social">
+
+    </div>
+
+</footer>
 </html>
