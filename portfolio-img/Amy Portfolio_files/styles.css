@@ -64,10 +64,6 @@ ul {
     margin: 0;
 }
 
-#nav-toggle {
-    display: none;
-}
-
 .hide-on-large {
     display: none;
 }
@@ -324,6 +320,16 @@ h2 {
     box-shadow: 0 0 40px var(--purple6);
 }
 
+/* .project-image {
+    margin: 2rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #9D5DB8;
+}
+ */
+
 .project-portfolio {
     margin: 2rem;
     padding: 2rem;
@@ -447,12 +453,7 @@ h2 {
 .contact-me-socials svg {
     margin-right: 1.5rem;
     max-width: 46px;
-    min-width: 46px;
     max-height: 46px;
-}
-
-#email-link-small {
-    display: none;
 }
 
 .text-me-form {
@@ -511,100 +512,17 @@ h2 {
     align-content: flex-start;
     justify-content: flex-start;
     align-items: stretch;
-    flex-grow: 1;
 }
 
 #message-text-area {
     flex: 1;
     margin: 0 2rem 1rem 0;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0 1rem 1rem;
     border-radius: 25px;
-    resize: none;
-    overflow-y: auto;
-    min-height: 80%;
-
-    ::-webkit-scrollbar {
-        width: 0px;
-        background: transparent; 
-    }
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
-#submit-button {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    align-self: flex-start;
-    max-width: 30%;
-    min-width: 25%;
-    margin: 0;
-    padding: 1rem 5rem;
-    border-radius: 50px;
-    background-color: var(--purple4);
-    font-weight: bold;
-    font-size: 24px;
-    color: var(--text-1);
-}
-
-#submit-button:hover {
-    color: var(--blue2);
-    box-shadow: 0 0 20px;
-    cursor: pointer;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--purple1);
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-.nav-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1.5rem 0 1.5rem 0;
-}
-
-.nav-footer a {
-    margin: 0 1rem;
-}
-
-.nav-footer a:hover {
-    color: var(--blue2);
-    box-shadow: 0 0 20px;
-}
-
-.footer-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem 0 1.5rem 0;
-}
-
-.footer-social svg {
-    margin: 0 1rem;
-    max-width: 46px;
-    max-height: 46px;
-}
-
-.footer-social svg:hover {
-    color: var(--rose5);
-    fill: var(--rose5);
-    text-shadow: 0 0 25px var(--text-1);
-    filter: drop-shadow(0 0 25px var(--text-1));
-}
-
-#made-with {
-    margin-bottom: 3rem;
+#email-link::after {
+    content: "";
 }
 
 /* Media Query para moviles */
@@ -614,7 +532,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 2rem 0.5rem 0 0.5rem;
+        padding: 2rem 0.5rem 2rem 0.5rem;
     }
     
     h2 {
@@ -637,30 +555,16 @@ footer {
         display: none;
     }
 
-    #hide-button {
+    /* .mobile-menu {
         display: none;
-        fill: var(--text-1);
-    }
+    } */
 
     .mobile-menu {
-        display: none;
-    }
-
-    input#nav-toggle:checked~label#show-button {
-        display: none !important;
-    }
-
-    input#nav-toggle:checked~label#hide-button {
-        display: flex !important;
-    }
-
-    input#nav-toggle:checked~.mobile-menu {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: stretch;
     }
-
 
     .mobile-menu ul {
         display: flex;
@@ -697,12 +601,6 @@ footer {
 
     .about-container {}
 
-    .about-social-icons:hover,
-    .about-social-icons:focus {
-        color: initial;
-        box-shadow:initial;
-    }
-
     .knowledge-section {
         margin: 0;
     }
@@ -723,188 +621,33 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 2rem;
-        margin: 0;
+        padding: 2rem; /* Ajustar el padding para móviles */
+        margin: 0; /* Eliminar el margin para evitar desbordamiento */
     }
 
     .contact-me-container {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 2rem;
+        padding: 2rem; /* Ajustar el padding para móviles */
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
     }
 
     .contact-me-form, .text-me-form {
         width: 100%;
-        padding: 0;
-    }
-
-    .contact-me-form p {
-        margin-bottom: 1rem;
+        padding: 2rem; /* Ajustar el padding para móviles */
     }
 
     .contact-me-socials a {
-        width: auto;
-        font-size: 1rem;
-    }
-
-    .contact-me-socials a:hover,
-    .contact-me-socials a:focus {
-        color:var(--text-1);
-        fill: initial;
-        text-shadow: initial;
-        filter: initial;
+        width: auto; /* Ajustar el ancho de los enlaces */
+        font-size: 1rem; /* Ajustar el tamaño de fuente */
     }
 
     .contact-me-socials svg {
         margin-right: 1.5rem;
         max-width: 24px;
-        min-width: 24px;
         max-height: 24px;
-        min-height: 24px;
-    }
-
-    #email-link-large {
-        display: none;
-    }
-
-    #email-link-small {
-        display: inline-flex;
-    }
-
-    .text-me-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-grow: 1;
-        margin-top: 1rem;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 1);
-        border-radius: 12px;
-    }
-    
-    .text-me-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-    .text-me-name-last {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-    
-    .text-me-name-last input {
-        flex: 1;
-        margin: 0 0 1rem 0;
-        padding: 0.25rem 1rem 0.25rem 1rem;
-        border-radius: 25px;
-    }
-    
-    .text-me-email {
-        display: flex;
-        flex: 1;
-        padding: 0 2rem 0 0;
-        flex-direction: row;
-    }
-    
-    .text-me-email input {
-        flex: 1;
-        margin: 0 1rem 1rem 0;
-        padding: 0.25rem 1rem 0.25rem 1rem;
-        border-radius: 25px;
-    }
-    
-    .text-me-message {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-grow: 1;
-    }
-    
-    #message-text-area {
-        flex: 1;
-        margin: 0 0 1rem 0;
-        padding: 0.25rem 1rem 0.25rem 1rem;
-        border-radius: 25px;
-        resize: none;
-        overflow-y: auto;
-        min-height: 80%;
-    
-        ::-webkit-scrollbar {
-            width: 0px;
-            background: transparent; 
-        }
-    
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    
-    #submit-button {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        align-self: center;
-        margin: 0;
-        padding: 0.5rem 3rem;
-        border-radius: 50px;
-        background-color: var(--purple4);
-        font-weight: bold;
-        font-size: 16px;
-        color: var(--text-1);
-    }
-    
-    #submit-button:hover {
-        color: var(--blue2);
-        box-shadow: 0 0 20px;
-        cursor: pointer;
-    }
-        
-    footer {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--purple1);
-        justify-content: flex-start;
-        align-items: center;
-        padding: 1rem 0;
-        margin-top: 1rem;
-    }
-    
-    .footer-social {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-    
-    .footer-social svg {
-        margin: 0 0.5rem;
-        max-width: 24px;
-        max-height: 24px;
-    }
-    
-    .footer-social svg:active {
-        color: var(--rose5);
-        fill: var(--rose5);
-        text-shadow: 0 0 25px var(--text-1);
-        filter: drop-shadow(0 0 25px var(--text-1));
-    }
-    
-    #made-with {
-        margin-bottom: 0;
     }
 }
 
@@ -924,7 +667,7 @@ footer {
         display: flex;
     }
 
-    .hide-on-large {
+    .menu-icon {
         display: none;
     }
 
